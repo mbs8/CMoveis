@@ -10,8 +10,4 @@
 | Implementar fingerprint puro                        | Não      |
 | Implementar funções auxiliares                      | Não      |
 | Implementar mapa de comparação (predita x real)     | Não      |
-
-
-
-
- 
+=======
