@@ -3,6 +3,7 @@
 | --------------------------------------------------- | -------- |
 | Ler artigo do professor                             | Sim      |
 | Criar notebook para visualização dos dados          | Sim      |
+| Procurar modelos de ML para regressores             | Sim      |
 | Procurar modelos de ML para pré-processamento       | Não      |
 | Criar notebook para o fingerprint puro              | Não      |
 | Criar notebook para pre-processamento               | Não      |

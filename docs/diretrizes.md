@@ -16,8 +16,8 @@ Nossa prosposta é pré-processar os dados e usar os dados pré-processados como
 # 4. Resultados
 ## 4.1 Análise dos dados (Média, desvio-padrão, features etc.)
 ## 4.2 Dois métodos de localização, sendo um deles alguma técnica básica de referência 
- - **Baseline**: Fingerprint
- - Fingerprint combinando com modelos de machine learning
+ - **Baseline**: Fingerprinting
+ - **Solução**: Fingerprinting combinando com modelos de machine learning (Random Forest, MLPRegressor, CNN, RNN, DecisionTreeRegressor)
 ## 4.3 Histograma dos erros em metros (*) 
 ## 4.4 BoxPlot dos erros em metros (*) 
 ## 4.5 Mapa de comparação: posições preditas vs. posições reais (*); 
