@@ -9,6 +9,7 @@ Utilizar a técnica de localização de fingerprint sem nenhuma otimização res
    - pandas
    - numpy
    - seaborn
+ - Biblioteca auxiliar de calculo de distâncias geográficas: PyRadioLoc
 
 # 3. Apresentação da solução 
 Nossa prosposta é pré-processar os dados e usar os dados pré-processados como entrada para a técnica de localização figerprint combinada com modelos de machine learning. O objetivo é aumentar a **precisão** da localização dos dispositivos móveis.
