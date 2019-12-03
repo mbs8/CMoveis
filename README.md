@@ -17,6 +17,7 @@ Usar random forest e MLP para gerar fingerprints e estimar as posições (latitu
 ## 4. Resultados
 
 ### 4.1 Análise dos dados
+Da base de dadas LocTreino_Equipe_4.csv
 ![data_visualization](images/data_visualization.png)
 ### 4.2 Métodos de localização propostos
 - **Baseline:** Fingerprint usando modelo de propagação Cost231Hata
@@ -27,6 +28,9 @@ Usar random forest e MLP para gerar fingerprints e estimar as posições (latitu
 
 ### 4.4 BoxPlot dos erros em metros
 ### 4.5 Mapa de comparação posições preditas vs. posições reais
+**Apenas Medições**
+**Apenas Fingerprint 20 x 20**
+**Fingerprint 20 x 20 + medições**
 ### 4.6 Erro de localização em metros
 **Método 1:** Apenas medições  
 **Método 2:** Apenas fingerprint 20 x 20  
