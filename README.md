@@ -15,7 +15,9 @@ Identificar a localização (latitude e longitude) de um móvel a partir da pot�
 Usar random forest e MLP para gerar fingerprints e estimar as posições (latitude e longitude) dos pontos de teste.
 
 ## 4. Resultados
+
 ### 4.1 Análise dos dados
+![data_visualization](images/data_visualization.png)
 ### 4.2 Métodos de localização propostos
 - **Baseline:** Fingerprint usando modelo de propagação Cost231Hata
 - **Solução:** Dois modelos de _machine learning_ para servir como modelo de propagação na geração do fingerprint
@@ -26,12 +28,12 @@ Usar random forest e MLP para gerar fingerprints e estimar as posições (latitu
 ### 4.4 BoxPlot dos erros em metros
 ### 4.5 Mapa de comparação posições preditas vs. posições reais
 ### 4.6 Erro de localização em metros
-**Método 1:** Apenas medições
-**Método 2:** Apenas fingerprint 20 x 20
-**Método 3:** Fingerprint 20 x 20 + medições
-**Método 4:** Random forest
-**Método 5:** Random forest + fingeprint
-**Método 6:** MLP
-**Método 7:** MLP + fingerprint
+**Método 1:** Apenas medições  
+**Método 2:** Apenas fingerprint 20 x 20  
+**Método 3:** Fingerprint 20 x 20 + medições  
+**Método 4:** Random forest  
+**Método 5:** Random forest + fingeprint  
+**Método 6:** MLP  
+**Método 7:** MLP + fingerprint  
 
 ## 5. Conclusão e dificuldades
