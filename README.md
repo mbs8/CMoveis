@@ -35,7 +35,7 @@ Da base de dadas LocTreino_Equipe_4.csv
   
 
 **Fingerprint 20 x 20 + medições**  
-![histogram_2](images/histogram_2.png)  
+![histogram_2](images/histogram_3.png)  
   
   
 
