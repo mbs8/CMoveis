@@ -35,10 +35,17 @@ Da base de dadas LocTreino_Equipe_4.csv
   
 
 **Fingerprint 20 x 20 + medições**  
-![histogram_2](images/histogram_3.png)  
+![histogram_3](images/histogram_3.png)  
   
   
-
+**Random Forest**  
+![histogram_4](images/histogram_4.png)  
+  
+  
+**MLP**  
+![histogram_5](images/histogram_5.png)  
+  
+  
 
 ### 4.4 BoxPlot dos erros em metros
 **Apenas Medições**  
@@ -51,6 +58,14 @@ Da base de dadas LocTreino_Equipe_4.csv
   
 **Fingerprint 20 x 20 + medições** 
 ![boxplot_3](images/boxplot_3.png)  
+  
+  
+**Random Forest**  
+![boxplot_4](images/boxplot_4.png)  
+  
+  
+**MLP**  
+![boxplot_5](images/boxplot_5.png)  
   
   
 ### 4.5 Mapa de comparação posições preditas vs. posições reais
@@ -66,6 +81,14 @@ Da base de dadas LocTreino_Equipe_4.csv
 ![comparation_map_3](images/comparation_map_3.png)  
   
   
+**Random Forest**  
+![comparation_map_4](images/comparation_map_4.png)  
+  
+  
+**MLP**  
+![comparation_map_5](images/comparation_map_5.png)  
+  
+  
 
 ### 4.6 Erro de localização em metros
 **Método 1:** Apenas medições  
@@ -75,5 +98,6 @@ Da base de dadas LocTreino_Equipe_4.csv
 **Método 5:** MLP  
 **Método 6:** Random forest + fingeprint    
 **Método 7:** MLP + fingerprint  
+![erros](images/erros.png)
 
 ## 5. Conclusão e dificuldades
