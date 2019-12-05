@@ -10,8 +10,3 @@
 | Criar notebook para figerprint com machine learning | Não      |
 | Implementar funções auxiliares                      | Não      |
 | Implementar mapa de comparação (predita x real)     | Não      |
-
-
-
-
- 
