@@ -72,8 +72,8 @@ Da base de dadas LocTreino_Equipe_4.csv
 **Método 2:** Apenas fingerprint 20 x 20  
 **Método 3:** Fingerprint 20 x 20 + medições  
 **Método 4:** Random forest  
-**Método 5:** Random forest + fingeprint  
-**Método 6:** MLP  
+**Método 5:** MLP  
+**Método 6:** Random forest + fingeprint    
 **Método 7:** MLP + fingerprint  
 
 ## 5. Conclusão e dificuldades
