@@ -122,6 +122,7 @@ Da base de dadas LocTreino_Equipe_4.csv
 **Método 5:** MLP  
 **Método 6:** Fingerprint + Random Forest (sem otimização)    
 **Método 7:** Fingerprint + Random Forest (com otimização)  
-![erros](images/erros.png)  
+
+<img src="images/erros.png" alt="erros" width="600" height="300">  
 
 ## 5. Conclusão e dificuldades
