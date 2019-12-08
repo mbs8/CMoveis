@@ -123,6 +123,6 @@ Da base de dadas LocTreino_Equipe_4.csv
 **Método 6:** Fingerprint + Random Forest (sem otimização)    
 **Método 7:** Fingerprint + Random Forest (com otimização)  
 
-<img src="images/erros.png" alt="erros" width="600" height="300">  
+<img src="images/erros.png" alt="erros" width="525" height="250">  
 
 ## 5. Conclusão e dificuldades
