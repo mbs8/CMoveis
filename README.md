@@ -12,7 +12,7 @@ Identificar a localização (latitude e longitude) de um móvel a partir da pot�
  - Biblioteca auxiliar de calculo de distâncias geográficas: PyRadioLoc
 
 ## 3. Solução proposta
-Usar random forest para gerar fingerprints e estimar as posições (latitude e longitude) dos pontos de teste. Também comparar com uso de random forest e MLP para previsão direta da loacalização do usuário (latitude e longitude).
+Usar random forest para gerar fingerprints e estimar as posições (latitude e longitude) dos pontos de teste. Também comparar com uso de _Random Forest_, MLP e K-NN para previsão direta da loacalização do usuário (latitude e longitude).
 
 ## 4. Resultados
 
@@ -22,9 +22,10 @@ Da base de dadas LocTreino_Equipe_4.csv
 
 ### 4.2 Métodos de localização propostos
 - **Baseline:** Fingerprint usando modelo de propagação Cost231Hata
-- **Solução:** Dois modelos de _machine learning_ para servir como modelo de propagação na geração do fingerprint e para previsão direta de latitude longitude
+- **Solução:** Três modelos de _machine learning_ para servir como modelo de propagação na geração do fingerprint e para previsão direta de latitude longitude
   - _Random forest_ 
   - _Multi Layer Perceptron_ (MLP)
+  - _K-NN Regressor_
 ### 4.3 Histograma dos erros em metros
 **Apenas Medições**  
 <img src="images/histogram_1.png" alt="histogram_1" width="400" height="300">
@@ -55,6 +56,11 @@ Da base de dadas LocTreino_Equipe_4.csv
 <img src="images/histogram_7.png" alt="histogram_7" width="400" height="300">  
   
 
+**K-NN Normalizado**  
+<img src="images/histogram_8.png" alt="histogram_8" width="400" height="300">  
+  
+
+
 ### 4.4 BoxPlot dos erros em metros
 **Apenas Medições**  
 <img src="images/boxplot_1.png" alt="boxplot_1" width="400" height="300">  
@@ -84,8 +90,11 @@ Da base de dadas LocTreino_Equipe_4.csv
 <img src="images/boxplot_7.png" alt="boxplot_7" width="400" height="300">  
   
   
+**K-NN Normalizado**  
+<img src="images/boxplot_8.png" alt="boxplot_8" width="400" height="300">  
+
 ### 4.5 Mapa de comparação posições preditas vs. posições reais
-**Apenas Medições**  
+**Apenas Medições**   
 <img src="images/comparation_map_1.png" alt="compararion_map_1" width="700" height="600">  
   
   
@@ -113,6 +122,10 @@ Da base de dadas LocTreino_Equipe_4.csv
 <img src="images/comparation_map_7.png" alt="compararion_map_7" width="700" height="600">  
   
   
+**K-NN Normalizado**  
+<img src="images/comparation_map_8.png" alt="compararion_map_8" width="700" height="600">  
+  
+  
 
 ### 4.6 Erro de localização em metros
 **Método 1:** Apenas medições  
@@ -122,7 +135,17 @@ Da base de dadas LocTreino_Equipe_4.csv
 **Método 5:** MLP  
 **Método 6:** Fingerprint + Random Forest (sem otimização)    
 **Método 7:** Fingerprint + Random Forest (com otimização)  
+**Método 8:** K-NN normalizado
 
 <img src="images/erros.png" alt="erros" width="525" height="250">  
 
 ## 5. Conclusão e dificuldades
+As principais dificuldades foram:  
+
+- Implementar o modelo teórico, fingerprint
+- A geração dos resultados leva parte considerável do tempo (Sugestão: uma lib que gere os gráficos e resultados de uma única vez poderia ajudar)
+- Tratamento com os dados, durante um bom tempo não tinhamos percebido que devíamos usar a dist (KM) para avaliar o algoritmo
+- Modelos de machine learning são complexos e a escolha dos parâmetros que vai definir a qualidade do resultado. A função de grid do scikit, apesar de bastante útil, leva bastante tempo para encontrar os melhores modelos o que a torna impraticável para aplicar sobre todos os modelos.
+- O fingerprint não foi efetivo em prever as localização, pois o modelo de propagação não leva em conta antenas setoriais (azimute), apenas leva em conta latitude e longitude.
+  
+Analisando os dados pode-se concluir que os melhores modelos foram o Random Forest e K-NN normalizado. Pode-se notar também que o uso de machine learning para gerar o mapa de propagação de rádio obteve resultados superiores em comparação ao modelo teórico de propagação.
