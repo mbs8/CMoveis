@@ -25,8 +25,21 @@ Da base de dadas LocTreino_Equipe_4.csv
 - **Solução:** Três modelos de _machine learning_ para servir como modelo de propagação na geração do fingerprint e para previsão direta de latitude longitude
   - _Random forest_ 
   - _Multi Layer Perceptron_ (MLP)
-  - _K-NN Regressor_
-### 4.3 Histograma dos erros em metros
+  - _K-NN Regressor_  
+
+### 4.3 Erro de localização em metros
+**Método 1:** Apenas medições  
+**Método 2:** Apenas fingerprint 20 x 20  
+**Método 3:** Fingerprint 20 x 20 + medições  
+**Método 4:** Random forest  
+**Método 5:** MLP  
+**Método 6:** Fingerprint + Random Forest (sem otimização)    
+**Método 7:** Fingerprint + Random Forest (com otimização)  
+**Método 8:** K-NN normalizado
+
+<img src="images/erros.png" alt="erros" width="525" height="250">  
+
+### 4.4 Histograma dos erros em metros
 **Apenas Medições**  
 <img src="images/histogram_1.png" alt="histogram_1" width="400" height="300">
   
@@ -61,7 +74,7 @@ Da base de dadas LocTreino_Equipe_4.csv
   
 
 
-### 4.4 BoxPlot dos erros em metros
+### 4.5 BoxPlot dos erros em metros
 **Apenas Medições**  
 <img src="images/boxplot_1.png" alt="boxplot_1" width="400" height="300">  
   
@@ -93,7 +106,7 @@ Da base de dadas LocTreino_Equipe_4.csv
 **K-NN Normalizado**  
 <img src="images/boxplot_8.png" alt="boxplot_8" width="400" height="300">  
 
-### 4.5 Mapa de comparação posições preditas vs. posições reais
+### 4.6 Mapa de comparação posições preditas vs. posições reais
 **Apenas Medições**   
 <img src="images/comparation_map_1.png" alt="compararion_map_1" width="700" height="600">  
   
@@ -126,19 +139,6 @@ Da base de dadas LocTreino_Equipe_4.csv
 <img src="images/comparation_map_8.png" alt="compararion_map_8" width="700" height="600">  
   
   
-
-### 4.6 Erro de localização em metros
-**Método 1:** Apenas medições  
-**Método 2:** Apenas fingerprint 20 x 20  
-**Método 3:** Fingerprint 20 x 20 + medições  
-**Método 4:** Random forest  
-**Método 5:** MLP  
-**Método 6:** Fingerprint + Random Forest (sem otimização)    
-**Método 7:** Fingerprint + Random Forest (com otimização)  
-**Método 8:** K-NN normalizado
-
-<img src="images/erros.png" alt="erros" width="525" height="250">  
-
 ## 5. Conclusão e dificuldades
 As principais dificuldades foram:  
 
