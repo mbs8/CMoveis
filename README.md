@@ -21,7 +21,7 @@ Da base de dadas LocTreino_Equipe_4.csv
 <img src="images/data_visualization.png" alt="compararion_map_1" width="1400" height="250">  
 
 ### 4.2 Métodos de localização propostos
-- **Baseline:** Fingerprint usando modelo de propagação Cost231Hata
+- **Baseline:** Fingerprint 20 x 20 + medições usando modelo de propagação Cost231Hata
 - **Solução:** Três modelos de _machine learning_ para servir como modelo de propagação na geração do fingerprint e para previsão direta de latitude longitude
   - _Random forest_ 
   - _Multi Layer Perceptron_ (MLP)
